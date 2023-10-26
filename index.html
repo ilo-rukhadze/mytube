@@ -10,9 +10,11 @@
     <title>Mytube</title>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const inputElement = document.getElementById('header-one');
+            const inputElement = document.getElementById('search-one');
+            const firstDivElement = document.querySelector('.header-one');
+
             inputElement.addEventListener('focus', () => {
-                inputElement.scrollIntoView();
+            firstDivElement.scrollIntoView();
             });
         });
     </script>
@@ -29,7 +31,7 @@
             <h1 class="title">MyTube</h1>
         </div>
         <div class="header-input">
-            <input class="search" type="text">
+            <input class="search" id="search-one" type="text">
             <input class="search-button" type="submit" value="Search">    
         </div>
         <img class="bell-icon" src="./assets/images/bell.png" alt="bell icon">
