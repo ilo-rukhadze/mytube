@@ -40,6 +40,7 @@ html, body, .videos-list-container{
 }
 
 .search { 
+    /* position: fixed; */
     margin-left: 25%;
     border:2px solid lightgray;
     border-radius: 40px 0px 0px 40px ;
@@ -58,8 +59,8 @@ html, body, .videos-list-container{
     background-size: 50px; /* Set the size of the background image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
     background-position: 1px center; 
-    width: 35%;
-    margin-left: 20%;
+    width: 32%;
+    margin-left: 15%;
 }
 
 .search-button{
