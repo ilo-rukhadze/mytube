@@ -12,10 +12,21 @@ body{
     justify-content: flex-end;
 }
 
+.header-logo{
+    display: flex;
+    align-items: center;
+}
+
+.header-input {
+    flex: 5;
+    display: flex;
+    align-items: center;
+}
 
 .header-container {
     display:flex;
-    position: relative;
+    justify-content:space-between;
+    flex-direction: row;
     align-items: center;
 
 }
@@ -81,9 +92,6 @@ body{
 
 
 .header-container .bell-icon {
-    position:absolute;
-    top:2px;
-    right: 15px;
     opacity: 0.45;
     width: 40px;
     height: 40px;
