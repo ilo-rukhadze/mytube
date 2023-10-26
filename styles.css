@@ -59,8 +59,8 @@ html, body, .videos-list-container{
     background-size: 50px; /* Set the size of the background image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
     background-position: 1px center; 
-    width: 32%;
-    margin-left: 0%;
+    width: 40%;
+    margin-left: 15%;
 }
 
 .search-button{
@@ -190,6 +190,32 @@ p {
         margin-left: 5px;
         padding: 0px;
     }
+
+    .search { 
+        /* position: fixed; */
+        margin-left: 15%;
+        border:2px solid lightgray;
+        border-radius: 40px 0px 0px 40px ;
+        height: 30px;
+        width: 30%;
+        font-size: larger;
+        text-indent: 5px;
+        background-size: 0px;
+        transition: none;
+    }
+
+    .search:focus { 
+        /* border:2px solid lightgrey; */
+        outline: 1px solid lightblue;
+        background: none;
+        background-size: 0px; 
+        background-position: 1px center; 
+        width: 30%;
+        margin-left: 15%;
+    }
+
+
+
 
 }
 
