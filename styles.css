@@ -3,8 +3,8 @@ html, body, .videos-list-container{
     width: 100%;
 }
 
-body{
-    overflow-y: auto 
+body {
+    overflow-y: scroll;
 }
 
 .videos-list-container{
