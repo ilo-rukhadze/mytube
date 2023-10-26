@@ -40,7 +40,6 @@ html, body, .videos-list-container{
 }
 
 .search { 
-    /* position: fixed; */
     margin-left: 25%;
     border:2px solid lightgray;
     border-radius: 40px 0px 0px 40px ;
