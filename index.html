@@ -7,11 +7,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
     <title>Mytube</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const inputElement = document.getElementById('header-one');
+            inputElement.addEventListener('focus', () => {
+                inputElement.scrollIntoView();
+            });
+        });
+    </script>
 </head>
 <body>
-    <div class="header-container">
+    <div class="header-container" id="header-one">
         <div class="header-logo">
             <div>
                 <div class="hum"></div>
