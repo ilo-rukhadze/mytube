@@ -3,9 +3,11 @@ html, body, .videos-list-container{
     width: 100%;
 }
 
-body {
-    overflow-y: scroll;
+body{
+    display: flex;
+    flex-direction: column;
 }
+
 
 .videos-list-container{
     display: flex;
@@ -22,6 +24,7 @@ body {
     display: flex;
     align-items: center;
 }
+
 
 .header-container {
     display:flex;
@@ -115,6 +118,7 @@ body .video-container{
     flex-direction: column;
     height: 100%;
     width: 100%;
+    padding-bottom:0px ;
 }
 
 .video-container p {
@@ -173,8 +177,9 @@ p {
     .video-container iframe{
         margin-left: 0%;
         margin-right: 0%;
+        margin-top: 25%;
         width:100%;
-        height: 100%;
+        height: 300px;
         border-radius: 30px;
     }
     .videos-list-container{
@@ -238,4 +243,98 @@ p {
         height:75%;
         border-radius: 30px;
     }
+}
+
+
+.main-video-footer img, .main-video-footer p, .main-video-footer a, .video-container p {
+    padding: 0;
+    margin: 0;
+}
+
+.main-video-footer {
+    display: flex;
+    align-items:center;
+    vertical-align:middle;
+}
+
+.main-video-footer img{
+    border-radius: 60px;
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 10px;
+    vertical-align:middle;
+}
+
+.main-video-footer p {
+    position: relative;
+    top: 9%;
+    margin-top: 10px;
+    white-space:nowrap;
+}
+
+.video-container #song-title {
+    margin-left: 5%;
+    margin-top:5px;
+}
+
+
+#subscribe {
+    position: relative;
+    left: 0%;
+    top:5px;
+    margin-left: 5%;
+    margin-right: 15px;
+    text-decoration: none;
+    border: 3px solid balck;
+    color:white;
+    padding: 10px 15px;
+    border-radius: 30px;
+    background-color: black;
+}
+
+
+.song-info span{
+    opacity: 50%;
+    font-size: small;
+}
+
+
+.main-video-footer-div{
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15%;
+}
+
+.main-video-footer-two div{
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; 
+    border: 1px solid black;
+    border-radius: 30px 0px;
+    padding: 15px 0px;
+    margin-top: 15%;
+    margin-right: 20%;
+    width: 80px;
+    height: 10px;
+}
+
+.thumb-up {
+    font-size: 120%;
+    color: black;
+    margin:15px;
+}
+
+#followers{
+    font-size: small;
+    margin-left: 5px;
+}
+
+.main-video-footer-two {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: -9px;
+    margin-left: 25px;
 }

@@ -7,17 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Mytube</title>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const inputElement = document.getElementById('search-one');
-            const firstDivElement = document.querySelector('.header-one');
-
-            inputElement.addEventListener('focus', () => {
-            firstDivElement.scrollIntoView();
-            });
-        });
-    </script>
 </head>
 <body>
     <div class="header-container" id="header-one">
@@ -40,26 +31,41 @@
     <div class="videos-list-container">
         <div class="video-container">
             <iframe src="https://www.youtube.com/embed/5p1u8PW17NA?si=kZTeJ1lt9VSWQdEb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <p>This is One of Goergian songs froms Erisioni <br>Watch and enjoy</p>
+            <p id="song-title">This is One of Georgian songs from Erisioni Watch and enjoy</p>
+            <div class="main-video-footer-div">
+                <div class="main-video-footer">
+                    <img src="./assets/images/erisioni-logo.jfif" alt="">
+                    <p class="song-info">Erisionni <br><span>15M subscribers</span></p>
+                    <a id="subscribe" href="#">subscribe</a>
+                </div>
+                <div class="main-video-footer-two">
+                    <div>
+                        <i class="fas fa-thumbs-up thumb-up"><span id="followers">7.7k</span></i>
+                    </div>   
+                    <div>
+                        <i class="fas fa-thumbs-down thumb-up"><span id="followers">0</span></i>
+                    </div>             
+                </div> 
+            </div>
         </div>
         <div class="videos-list">
             <div class="video-list-item">
                 <img class="list-video" src="./assets/images/good.webp" alt="">
-                <p>Video discription</p>
+                <p>Video description</p>
             </div>
             <div class="video-list-item">
                 <img class="list-video" src="./assets/images/LP.webp" alt="">
-                <p>Video discription</p>
+                <p>Video description</p>
             </div>
             <div class="video-list-item">
                 <img class="list-video" src="./assets/images/kety.webp" alt="">
-                <p>Video discription</p>
+                <p>Video description</p>
             </div>
             <div class="video-list-item">
                 <img class="list-video" src="./assets/images/eminem.jpg" alt="">
-                <p>Video discription</p>
+                <p>Video description</p>
             </div>
         </div>      
-    </div>   
+    </div> 
 </body>
 </html>
