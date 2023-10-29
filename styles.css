@@ -110,12 +110,13 @@ body{
 
 hr {
     border: 1px solid lightgray;
+    width: 100%;
 }
 
 body .video-container{
     display: flex;
     flex-direction: column;
-    height: 700px;
+    height: auto;
     width: 100%;
     padding-bottom:0px ;
 }
@@ -129,8 +130,8 @@ body .video-container{
 .video-container iframe{
     margin-left: 5%;
     width:90%;
-    height:60%;
-    border-radius: 30px;
+    height:400px;
+    border-radius: 10px;
 }
 
 .videos-list{
@@ -165,6 +166,7 @@ p {
     font-size: 120%;
     color: black;
     margin:15px;
+    background-color:#E5E5E5;
 }
 
 
@@ -256,6 +258,17 @@ p {
     margin-left: 25px;
 }
 
+.video-description {
+    margin-top: 15px;
+    margin-left: 5%;
+    padding: 2%;
+    border: 1px solid #E5E5E5;
+    background-color: #E5E5E5;
+    font-size: small;
+    border-radius: 5px;
+    margin-right: 5%;
+}
+
 
 @media (max-width:700px){
     .search {
@@ -268,21 +281,19 @@ p {
         margin-left: 10px;
     }
     .video-container {
-        min-height: 500px;
+        height: auto;
     }
     .video-container iframe{
         margin-left: 0%;
         margin-right: 0%;
         width:100%;
         min-height: 400px;
-        border-radius: 30px;
+        border-radius: 5px;
     }
     .videos-list-container{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100%;
-        padding-top: 100px;
     }
     .video-list-item {
         margin-bottom: 0%;
@@ -328,11 +339,11 @@ p {
     }
 }
 
-@media (min-width:1500px) { 
+@media (min-width:1200px) { 
     .video-container iframe{
         margin-left: 5%;
         width:90%;
-        height:100%;
+        min-height:600px;
         border-radius: 30px;
     }
 }
